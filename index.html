@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="contact-image.css" />
+    <link rel="stylesheet" href="indicator.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>JS Carousel</title>
+  </head>
+  <body>
+    
+    <!-- Nav component start -->
+    <nav>
+      <div class="nav__container">
+        <div class="nav__content">
+          <h1>Contacts</h1>
+        </div>
+      </div>
+      <div class="nav__spacer"></div>
+
+      <!-- Indicator component start -->
+      <div class="indicator__container">
+        <button class="indicator__carousel current-slide"></button>
+        <button class="indicator__carousel"></button>
+        <button class="indicator__carousel"></button>
+      </div>
+      <!-- Indicator component end -->
+    </nav>
+    <!-- Nav component end -->
+
+    <section class="">
+
+      <!-- Contact-image component start -->
+      <div class="contact__image">
+        <img src="public/Carousel background image (1).png" />
+      </div>
+      <!-- Contact-image component end -->
+
+      <!-- Carousel component start -->
+      <div class="carousel" data-carousel>
+        <button
+          class="carousel__button carousel__button--left is-hidden"
+          data-carousel-button="prev"
+        >
+          <img src="public/arrow_l.png" />
+        </button>
+        <div class="carousel__track-container" >
+            <ul class="carousel__track">
+                <li class="slide current-slide">
+                  <div class="carousel__contact-card">
+                    <img src="public/image 1.png" />
+                    <div class="carousel__contact-info">
+                      <h4>First name last name </h4>
+                      <p>London office. UK</p>
+                    </div>
+                    <div class="carousel__button-container">
+                      <!-- Button component start -->
+                      <button class="theme-white">Info</button>
+                      <button class="theme-blue">Contact</button>
+                       <!-- Button component end -->
+                    </div>
+                </li>
+                
+              </ul>
+               <!-- Indicator component start -->
+      <!-- <div class="indicator__container indicator__container--centered">
+        <button class="indicator__carousel current-slide"></button>
+        <button class="indicator__carousel"></button>
+        <button class="indicator__carousel"></button>
+      </div> -->
+      <!-- Indicator component end -->
+
+        </div>
+            <button
+              class="carousel__button carousel__button--right"
+            >
+              <img src="public/arrow_r.png" />
+            </button>
+            </div>
+       <!-- Carousel component end -->
+    </section>
+  </body>
+</html>
