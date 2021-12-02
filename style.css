@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  section {
+    margin-top: 5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8vw;
+  }
+}
