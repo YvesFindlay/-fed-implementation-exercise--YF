@@ -1,0 +1,35 @@
+:root {
+  --royal-blue: #0044db;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.carousel__button-container button {
+  padding: 1rem 1.65rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+}
+
+button.theme-white {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+}
+
+button.theme-white:hover {
+  background-color: var(--black);
+  transition: all 300ms ease-in;
+  color: var(--white);
+}
+
+button.theme-blue {
+  background-color: var(--royal-blue);
+  color: var(--white);
+  transition: all 300ms linear;
+}
+
+button.theme-blue:hover {
+  background-color: var(--black);
+  color: var(--white);
+}

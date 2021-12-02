@@ -1,0 +1,12 @@
+.contact__image {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
